@@ -24,9 +24,9 @@ public class CookieManager {
     }
 
     public Cookie buildCookie(String name, String value){
-        Cookie aCookie = new Cookie.Builder(name, value)
+
+        return new Cookie.Builder(name, value)
                 .domain("the-internet.herokuapp.com")
                 .build();
-        return aCookie;
     }
 }
